@@ -13,7 +13,7 @@ function showNextValue(){
     let historyTotal = history.length;
     let lastIndex = historyTotal - 1;
     if(currentIndex <= lastIndex){
-        HISTORY.innerHTML = history[currentIndex] + ' <button class = "remove" value = "0">Delete</button>';
+        HISTORY.innerHTML = history[currentIndex] + ' <button class = "remove" value = "0"><i class="las la-times"></i></button>';
         // to increment index by 1 to make the make the operation recurring
         currentIndex++;
     }
@@ -38,7 +38,7 @@ function showPrevValue(){
         // console.log(presentIndex);
         // if(presentIndex != 0 ){
             let previousIndex = presentIndex - 1;
-            HISTORY.innerHTML = history[previousIndex] + ' <button class = "remove" value = "0">Delete</button>';
+            HISTORY.innerHTML = history[previousIndex] + ' <button class = "remove" value = "0"><i class="las la-times"></i></button>';
             // console.log(history[previousIndex]);
             console.log(previousIndex);
         }
@@ -49,7 +49,7 @@ function showPrevValue(){
     else{
         let previousIndex = history.length - 1;
         
-        HISTORY.innerHTML = history[previousIndex] + ' <button class = "remove" value = "0">Delete</button>';
+        HISTORY.innerHTML = history[previousIndex] + ' <button class = "remove" value = "0"><i class="las la-times"></i></button>';
         
     }
 }
